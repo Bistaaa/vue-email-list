@@ -10,7 +10,13 @@
     </head>
     <body>
 
-        <div id="app"></div>
+        <div id="app">
+            <button @click="stampaMails">Genera</button>
+
+            <ul>
+                <li v-for="mail in mailList">{{mail}}</li>
+            </ul>
+        </div>
 
         <script src="https://unpkg.com/vue@3"></script>
         <script type="text/javascript" src="js/main.js"></script>
